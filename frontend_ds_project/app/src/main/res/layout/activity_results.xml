@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_activity_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityResultsActivity">
+
+    <TextView
+        android:id="@+id/activity_results_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/activity_results_text"
+        android:textColor="@color/activity_results_text_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/activity_results_total_distance_imageView"
+        android:layout_width="84dp"
+        android:layout_height="108dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        app:srcCompat="@drawable/running" />
+
+    <ImageView
+        android:id="@+id/activity_results_mean_speed_imageView"
+        android:layout_width="84dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_distance_imageView"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/running_shoes" />
+
+    <ImageView
+        android:id="@+id/activity_results_total_ascent_imageView"
+        android:layout_width="84dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_mean_speed_imageView"
+        app:layout_constraintVertical_bias="0.115"
+        app:srcCompat="@drawable/ascent" />
+
+    <ImageView
+        android:id="@+id/activity_stats_activity_time_imageView"
+        android:layout_width="84dp"
+        android:layout_height="104dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_ascent_imageView"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/stopwatch2" />
+
+    <TextView
+        android:id="@+id/activity_results_total_distance_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/total_distance_text"
+        android:textColor="@color/activity_results_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_textView"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/activity_results_mean_speed_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/mean_speed_text"
+        android:textColor="@color/activity_results_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_distance_textView"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <TextView
+        android:id="@+id/activity_results_total_ascent_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/total_ascent_text"
+        android:textColor="@color/activity_results_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_mean_speed_textView"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
+        android:id="@+id/activity_results_total_activity_time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/total_activity_time_text"
+        android:textColor="@color/activity_results_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_ascent_textView"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <TextView
+        android:id="@+id/total_distance_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/number_zero_text"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_results_mean_speed_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/activity_results_total_distance_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_distance_textView"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/mean_speed_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/number_zero_text"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_results_total_ascent_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_results_mean_speed_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_mean_speed_textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/total_ascent_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/number_zero_text"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_results_total_activity_time_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/activity_results_total_ascent_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_ascent_textView"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/total_activity_time_value_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_zero_text"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_stats_activity_time_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/activity_results_total_activity_time_textView"
+        app:layout_constraintVertical_bias="0.322" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DS_Frontend</string>
+    <string name="upload_button_text">UPLOAD ACTIVITY</string>
+    <string name="view_stats_text">VIEW YOUR STATS</string>
+    <string name="compare_stats_text">COMPARE STATS</string>
+    <string name="user_stats_total_distance_text">YOU HAVE RUN A TOTAL DISTANCE OF</string>
+    <string name="total_ascent_text">TOTAL ASCENT</string>
+    <string name="total_activity_time_text">TOTAL ACTIVITY TIME</string>
+    <string name="activity_results_text">ACTIVITY RESULTS</string>
+    <string name="total_distance_text">TOTAL DISTANCE</string>
+    <string name="mean_speed_text">MEAN SPEED</string>
+    <string name="number_zero_text">0</string>
+    <string name="syncing_text">Syncing with server…</string>
+</resources>

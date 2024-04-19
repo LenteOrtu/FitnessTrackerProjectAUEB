@@ -1,0 +1,42 @@
+MASTER:
+Just run main method.
+Master System requires all files except from Worker.java and MappingThread.java
+
+APPLICATION:
+Need to specify IP_ADDRESS and PORT of Server in both Request Thread classes.
+
+WORKER:
+args[0] = IP_ADDRESS
+Worker System requires Worker.java, GPXPacket.java, GPXPoint.java and MappingThread.java files.
+
+ASSUMPTIONS:
+- Each user can only send one file at a time, meaning that in order for the same user to send a second gpx file
+for processing he has to wait until he receives the results from the first one.
+
+ABOUT THE GLOBAL USER ACTIVITY STATS:
+There is an attempt to update the global user stats every x seconds (currently set at 5 seconds).
+
+Also, if the Master system stops operating immediately after activity results have been calcualted then the global
+activity stats updater won't have enough time to update the global_stats file and the global_stats file will contain
+innacurate data. An assumption is made that the Main.java method will keep running after a request has been completed
+for at least another 5 seconds.
+
+ABOUT CHUNK_SIZE:
+We made the choice of size 10 gpx chunks, this can easily be changed from the ResultReducer CHUNK_SIZE variable.
+
+ABOUT SENDING GPX CHUNKS FROM DIFFERENT GPX FILES AT THE SAME TIME:
+There can be up to 5 active threads sending gpx chunks from a different gpx file, this option can be changed
+by adjusting the variable SENDER_LIMIT of the TaskAssigner class.
+
+PART B NOTES:
+- User route stats are logged but never used. (Part A requested this)
+- Mean of Mean total distance, mean total activity time and mean ascent for all users is being logged in global_stats
+file as requested from part A but never used.
+- Application user now receives close to real-time Mean of total distance, total activity time and total ascent of
+users so that comparison of stats is pretty accurate.
+- Server stores usernames for persistent stats requests.
+- Android application identifies username from GPX file and stores it in .txt file for persistent stats requests.
+- Synchronization in server between threads that serve same user in parallel.
+( Case where user uploads GPX file and then views stats - in order to make sure user_total_stats file is accessed/edited
+in a thread-safe way)
+- Loading screen in application is removed from the activity stack when navigating "backwards" for better user experience.

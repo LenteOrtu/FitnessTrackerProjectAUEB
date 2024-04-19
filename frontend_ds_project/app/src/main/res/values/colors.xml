@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="screen_background">#FAFAFA</color>
+    <color name="button_color">#c753fc</color>
+    <color name="button_text_color">#FFFFFFFF</color>
+    <color name="user_stats_text_color">#b141fc</color>
+    <color name="activity_results_text_color">#b141fc</color>
+    <color name="user_stats_progress_bar_color">#b141fc</color>
+    <color name="syncing_text_color">#b141fc</color>
+    <color name="user_bar_color">#c753fc</color>
+    <color name="global_bar_color">#7604c2</color>
+</resources>
